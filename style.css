@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', 'sans-serif';
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(55, 27, 78);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Heading */
+h1 {
+    text-transform: uppercase;
+    word-spacing: 2px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 2.5px;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+/* Display Box */
+.displayPsw {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    color: white;
+    height: 70rem;
+    width: 360px;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(184, 181, 151);
+    background-color: rgb(24, 9, 35);
+}
+
+.Password {
+    min-width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    opacity: 1;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: rgb(212, 212, 6);
+}
+
+.Password::placeholder {
+    color: rgb(212, 212, 6);
+}
+
+#copy-btn {
+    position: absolute;
+    color: rgb(78, 194, 190);
+    right: 5%;
+    cursor: pointer;
+}
+
+span {
+    position: relative;
+    height: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1.5rem;
+    left: -3rem;
+    border-radius: 10px;
+    width: 3.1rem;
+    background-color: rgb(156, 31, 181);
+    opacity: 0;
+    color: rgb(212, 212, 6);
+    font-weight: 800;
+}
+
+/* In Javascript */
+span.active {
+    opacity: 1;
+}
+
+/* Input-Container */
+.input-container {
+    margin: 20px;
+    padding: 0px 10px;
+    color: white;
+    font-size: 1.2rem;
+    height: 500rem;
+    width: 360px;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(184, 181, 151);
+    background-color: rgb(24, 9, 35);
+}
+
+/* Length of Numbers */
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.number {
+    color: rgb(210, 210, 22);
+}
+
+/* Slider-Section */
+.slider {
+    appearance: none;
+    width: 90%;
+    --lt-violet: ;
+    background-color: rgb(43, 19, 62);
+    height: 2.5%;
+    border-radius: 20px;
+    position: relative;
+    left: 5%;
+    cursor: pointer;
+    background-image: repeating-radial-gradient(purple, rgb(117, 73, 173));
+    background-repeat: no-repeat;
+}
+
+.slider::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    box-shadow: 0.5px 1px 0.8rem rgb(210, 210, 22);
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: rgb(210, 210, 22);
+    transition: all 100ms ease-in;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: rgb(11, 20, 56);
+    border: 2px solid rgb(210, 210, 22);
+    box-shadow: 0.5px 1px 2rem rgb(210, 210, 22);
+}
+
+.slider:focus {
+    outline: 2px solid rgb(210, 210, 22);
+}
+
+/* Checkboxes */
+.checkboxes {
+    margin-top: 30px;
+}
+
+.checkbox {
+    font-size: 0.95rem;
+    display: flex;
+    margin: 1rem 1rem;
+    gap: 1rem;
+    letter-spacing: 0.75px;
+}
+
+.checkbox input {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 0.15rem;
+    border: 1px solid rgb(99, 182, 203);
+}
+
+.checkbox input:checked {
+    background-color: rgb(136, 193, 207);
+}
+
+.checkbox input:checked::before {
+    content: '✔';
+    font-weight: 900;
+    position: relative;
+    top: -30%;
+}
+
+/* Strength-Section */
+.strengh-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.indicator {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+/* Button */
+button {
+    height: 14%;
+    position: relative;
+    color: rgb(210, 210, 22);
+    font-size: 1.1rem;
+    top: 2%;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+    left: 5%;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(195, 184, 58);
+    background-color: rgb(129, 9, 153);
+    width: 90%;
+    cursor: pointer;
+}
